@@ -40,6 +40,7 @@ class TelegramBot:
 				if (self.users[userId]['type'] == 1):
 					self.admins.append(userId)
 			self.whoSent = strToIntDict(json.loads(x[2]))
+			self.msgProb = strToIntDict(json.loads(x[3]))
 		except:
 			print("LoadError")
 			sys.exit(1)
@@ -49,6 +50,7 @@ class TelegramBot:
 		f.write(str(self.offsetId) + '\n')
 		f.write(json.dumps(intToStrDict(self.users)) + '\n')
 		f.write(json.dumps(intToStrDict(self.whoSent)) + '\n')
+		f.write(json.dumps(intToStrDict(self.msgProb)) + '\n')
 
 	def getUsername(self, user):
 		if ('title' in user):
@@ -78,6 +80,8 @@ class TelegramBot:
 		self.users = {}
 		self.admins = []
 		self.whoSent = {}
+		self.usrProb = {}
+		self.msgProb = {}
 		self.offsetId = -1
 		self.dataFilename = dataFilename
 		self.logsFilename = logsFilename
@@ -103,7 +107,7 @@ class TelegramBot:
 		self.users[user['id']] = {
 			'id': user['id'],
 			'type': 0,
-			'username' : self.getUsername(user)
+			'probName' : 'no problem'
 		}
 
 	def sendCommand(self, responseElement, chatId):
@@ -121,27 +125,38 @@ class TelegramBot:
 			sys.exit(1)
 
 	def handleUpdate(self, update):
+		if ('message' not in update):
+			return
 		f = open(self.logsFilename, 'a')
 		f.write(json.dumps(update, indent = 4) + '\n\n\n')
 
 		message = update['message']
-		user = message['chat']
-		userId = user['id']
+		chat = message['chat']
+		userId = chat['id']
 		if (userId not in self.users):
-			self.addUser(user)
-		else:
-			self.users[userId]['username'] = self.getUsername(user)
+			self.addUser(chat)
+		user = self.users[userId]
+
 		if ('text' in message):
-			if (self.users[userId]['type'] == 0):
+			if (user['type'] == 0):
 				#default user
 				if (message['text'] == '/start'):
 					self.sendCommand(markdownMessage(HiMsg), userId)
+					return
 
-				text = '*' + self.users[userId]['username'] + '*\n' + message['text']
+				params = message['text'].split()
+				if (params[0] == '/select' or params[0] == '/newtask'):
+					if (len(params) >= 2):
+						user['probName'] = ' '.join(params[1:])
+					else:
+						user['probName'] = 'no problem'
+					return
+
+				text = '*' + self.getUsername(chat) + ' (' + user['probName'] + ')' + '*\n' + message['text']
 				for adminId in self.admins:
-					print(adminId)
 					resp = self.sendCommand(markdownMessage(text), adminId)
 					self.whoSent[resp['message_id']] = userId
+					self.msgProb[resp['message_id']] = user['probName']
 
 			if (self.users[userId]['type'] == 1):
 				if ('reply_to_message' in message):
@@ -163,10 +178,13 @@ class TelegramBot:
 							self.sendCommand(markdownMessage('Вам бан'), rabotyagaId)
 							return
 
-						text = '*' + self.users[userId]['username'] + "*\n" + message['text']
+						text = '*' + self.getUsername(message['from']) + ' (' + self.msgProb[msgId] + ')' + '*\n' + message['text']
 						self.sendCommand(markdownMessage(text), rabotyagaId)
+						self.whoSent[message['message_id']] = rabotyagaId
+						self.msgProb[message['message_id']] = self.msgProb[msgId]
 				else:
 					pass
+
 	def go(self):
 		updates = self.getUpdates()
 		for update in updates:

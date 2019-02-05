@@ -1,0 +1,730 @@
+{
+    "update_id": 882049716,
+    "message": {
+        "message_id": 113,
+        "from": {
+            "id": 306246284,
+            "is_bot": false,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 306246284,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "type": "private"
+        },
+        "date": 1549396000,
+        "text": "/start",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 6,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+
+
+{
+    "update_id": 882049717,
+    "message": {
+        "message_id": 114,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396011,
+        "text": "\u043d\u0435 \u043e\u0447 \u043f\u043e\u043d\u044f\u0442\u043d\u043e \u0447\u0442\u043e \u0438\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0432\u0438\u0434\u0443"
+    }
+}
+
+
+{
+    "update_id": 882049718,
+    "message": {
+        "message_id": 115,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396020,
+        "text": "\u043f\u043e\u0434 \u0442\u0435\u043c \u0447\u0442\u043e \u043d\u0430\u043f\u0438\u0441\u0430\u043d\u043e"
+    }
+}
+
+
+{
+    "update_id": 882049719,
+    "message": {
+        "message_id": 116,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396023,
+        "text": "\u043f\u043e\u0441\u043b\u0435 /start",
+        "entities": [
+            {
+                "offset": 6,
+                "length": 6,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+
+
+{
+    "update_id": 882049720,
+    "message": {
+        "message_id": 117,
+        "from": {
+            "id": 306246284,
+            "is_bot": false,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 306246284,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "type": "private"
+        },
+        "date": 1549396023,
+        "text": "\u0421 \u0440\u0435\u0431\u0440\u044b\u0448\u043a\u0430\u043c\u0438"
+    }
+}
+
+
+{
+    "update_id": 882049721,
+    "message": {
+        "message_id": 118,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396029,
+        "text": "\u043c\u043d\u0435 \u043a\u0430\u0436\u0435\u0442\u0441\u044f \u043d\u0430\u0434\u043e \u0434\u043e\u043f\u0438\u0441\u0430\u0442\u044c"
+    }
+}
+
+
+{
+    "update_id": 882049722,
+    "message": {
+        "message_id": 119,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396031,
+        "text": "\u043f\u0440\u043e \u0442\u043e"
+    }
+}
+
+
+{
+    "update_id": 882049723,
+    "message": {
+        "message_id": 120,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396037,
+        "text": "\u043a\u0430\u043a \u0438\u0441\u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u0442\u044c \u0431\u043e\u0442\u0430"
+    }
+}
+
+
+{
+    "update_id": 882049724,
+    "message": {
+        "message_id": 121,
+        "from": {
+            "id": 306246284,
+            "is_bot": false,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 306246284,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "type": "private"
+        },
+        "date": 1549396048,
+        "text": "/start kek",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 6,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+
+
+{
+    "update_id": 882049725,
+    "message": {
+        "message_id": 122,
+        "from": {
+            "id": 258907743,
+            "is_bot": false,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396675,
+        "text": "\u041d\u0443 \u043d\u0430\u043f\u0438\u0448\u0438 \u0447\u0442\u043e \u043d\u0430\u0434\u043e \u0434\u043e\u043f\u0438\u0441\u0430\u0442\u044c"
+    }
+}
+
+
+{
+    "update_id": 882049726,
+    "message": {
+        "message_id": 123,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396799,
+        "text": "\u043d\u0443 \u0441\u0434\u0435\u043b\u0430\u0439 \u0435\u0449\u0435 \u043a\u043e\u043c\u0430\u043d\u0434\u0443 /newtask \u043a\u043e\u0442\u043e\u0440\u0430\u044f \u0434\u0435\u043b\u0430\u0435\u0442 \u0442\u043e\u0436\u0435 \u0441\u0430\u043c\u043e\u0435 \u0447\u0442\u043e \u0438 select",
+        "entities": [
+            {
+                "offset": 22,
+                "length": 8,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+
+
+{
+    "update_id": 882049727,
+    "message": {
+        "message_id": 124,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396807,
+        "text": "\u043d\u043e \u0442\u0430\u043a \u0431\u0443\u0434\u0435\u0442 \u043f\u0440\u043e\u0441\u0442\u043e \u043f\u0440\u043e\u0449\u0435 \u043f\u043e\u043d\u044f\u0442\u044c"
+    }
+}
+
+
+{
+    "update_id": 882049728,
+    "message": {
+        "message_id": 125,
+        "from": {
+            "id": 306246284,
+            "is_bot": false,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 306246284,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "type": "private"
+        },
+        "date": 1549396809,
+        "text": "/select \u043a\u0435\u043a",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 7,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+
+
+{
+    "update_id": 882049729,
+    "message": {
+        "message_id": 126,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396818,
+        "text": "\u0438 \u043d\u0430\u043f\u0438\u0448\u0438 \u0447\u0442\u043e \u0442\u0438\u043f\u0430 \u043f\u043e\u0441\u043b\u0435 \u0432\u044b\u0431\u043e\u0440\u0430 \u0437\u0430\u0434\u0430\u0447\u0438"
+    }
+}
+
+
+{
+    "update_id": 882049730,
+    "message": {
+        "message_id": 127,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396825,
+        "text": "\u0443 \u0432\u0430\u0441 \u0431\u0443\u0434\u0435\u0442"
+    }
+}
+
+
+{
+    "update_id": 882049731,
+    "message": {
+        "message_id": 128,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396830,
+        "text": "\u043f\u0435\u0440\u0435\u043f\u0438\u0441\u043a\u0430 \u043f\u043e \u0437\u0430\u0434\u0430\u0447\u0435"
+    }
+}
+
+
+{
+    "update_id": 882049732,
+    "message": {
+        "message_id": 129,
+        "from": {
+            "id": 258907743,
+            "is_bot": false,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396836,
+        "text": "\u0440\u0430\u0441\u0441\u043a\u0430\u0436\u0438 \u043b\u0443\u0447\u0448\u0435 \u043a\u0430\u043a \u043d\u0430 \u0433\u0443\u0433\u043b \u0437\u0430\u043b\u0438\u0432\u0430\u0442\u044c"
+    }
+}
+
+
+{
+    "update_id": 882049733,
+    "message": {
+        "message_id": 130,
+        "from": {
+            "id": 258907743,
+            "is_bot": false,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396842,
+        "text": "\u0442\u0430\u043c \u0435\u0440\u0443\u043d\u0434\u0430 \u043a\u0430\u043a\u0430\u044f-\u0442\u043e \u043d\u0430\u043f\u0438\u0441\u0430\u043d\u0430"
+    }
+}
+
+
+{
+    "update_id": 882049734,
+    "message": {
+        "message_id": 131,
+        "from": {
+            "id": 123425845,
+            "is_bot": false,
+            "first_name": "Dmitry",
+            "last_name": "Dmitry",
+            "username": "subird",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396849,
+        "text": "\u043e\u043a \u0433\u043e \u0432 \u043b\u0441"
+    }
+}
+
+
+{
+    "update_id": 882049735,
+    "message": {
+        "message_id": 132,
+        "from": {
+            "id": 258907743,
+            "is_bot": false,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549396852,
+        "text": "\u0433\u043e"
+    }
+}
+
+
+{
+    "update_id": 882049736,
+    "message": {
+        "message_id": 136,
+        "from": {
+            "id": 306246284,
+            "is_bot": false,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 306246284,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "type": "private"
+        },
+        "date": 1549397119,
+        "text": "/select \u043a\u0435\u043a",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 7,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+
+
+{
+    "update_id": 882049737,
+    "message": {
+        "message_id": 137,
+        "from": {
+            "id": 258907743,
+            "is_bot": false,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": 258907743,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "type": "private"
+        },
+        "date": 1549397127,
+        "text": "/newtask prob",
+        "entities": [
+            {
+                "offset": 0,
+                "length": 8,
+                "type": "bot_command"
+            }
+        ]
+    }
+}
+
+
+{
+    "update_id": 882049738,
+    "message": {
+        "message_id": 138,
+        "from": {
+            "id": 306246284,
+            "is_bot": false,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 306246284,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "type": "private"
+        },
+        "date": 1549397128,
+        "text": "\u043a\u0435\u043a"
+    }
+}
+
+
+{
+    "update_id": 882049739,
+    "message": {
+        "message_id": 140,
+        "from": {
+            "id": 306246284,
+            "is_bot": false,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": 306246284,
+            "first_name": "Dmitriy",
+            "last_name": "Grigoriev",
+            "username": "DmitryGrig",
+            "type": "private"
+        },
+        "date": 1549397194,
+        "text": "\u041d\u0430\u0439\u0442\u0438 \u043f\u043e\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0434\u043b\u0438\u043d\u044b N, \u0410 \u0434\u043b\u0438\u043d\u0430 \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0439 \u0432\u043e\u0437\u0440\u0430\u0441\u0442\u0430\u044e\u0449\u0435\u0439 \u043f\u043e\u0434\u043f\u043e\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438 B \u0434\u043b\u0438\u043d\u0430 \u043c\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e \u0443\u0431\u044b\u0432\u0430\u044e\u0449\u0435\u0439 \u043f\u043e\u0434\u043f\u043e\u0441\u043b\u0435\u0434\u043e\u0432\u0430\u0442\u0435\u043b\u044c\u043d\u043e\u0441\u0442\u0438"
+    }
+}
+
+
+{
+    "update_id": 882049740,
+    "message": {
+        "message_id": 142,
+        "from": {
+            "id": 485335572,
+            "is_bot": false,
+            "first_name": "fedor",
+            "last_name": "ushakov",
+            "username": "fedorushakov",
+            "language_code": "ru"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549397202,
+        "text": "\u0434\u043e \u0441\u043b\u0435\u0437"
+    }
+}
+
+
+{
+    "update_id": 882049741,
+    "message": {
+        "message_id": 143,
+        "from": {
+            "id": 258907743,
+            "is_bot": false,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": 258907743,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "type": "private"
+        },
+        "date": 1549397288,
+        "text": "text"
+    }
+}
+
+
+{
+    "update_id": 882049742,
+    "message": {
+        "message_id": 145,
+        "from": {
+            "id": 258907743,
+            "is_bot": false,
+            "first_name": "Semyon",
+            "last_name": "Savkin",
+            "username": "savkinsd2089",
+            "language_code": "en"
+        },
+        "chat": {
+            "id": -322359876,
+            "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+            "type": "group",
+            "all_members_are_administrators": false
+        },
+        "date": 1549397308,
+        "reply_to_message": {
+            "message_id": 144,
+            "from": {
+                "id": 720745774,
+                "is_bot": true,
+                "first_name": "Task idea bot",
+                "username": "task_idea_bot"
+            },
+            "chat": {
+                "id": -322359876,
+                "title": "\u0440\u0430\u0431\u043e\u0442\u044f\u0433\u0438 \u0437\u0430 \u0440\u0430\u0431\u043e\u0442\u043e\u0439 \u0432 \u0442\u0433",
+                "type": "group",
+                "all_members_are_administrators": false
+            },
+            "date": 1549397288,
+            "text": "savkinsd2089 (prob)\ntext",
+            "entities": [
+                {
+                    "offset": 0,
+                    "length": 19,
+                    "type": "bold"
+                }
+            ]
+        },
+        "text": "text"
+    }
+}
+
+
