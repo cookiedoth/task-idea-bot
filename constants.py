@@ -1,3 +1,5 @@
+from common import readFile
+
 Timeout = 5
 
-HiMsg = "Команды:\n/select <taskname> - изменить название текущей задачи"
+HiMsg = readFile("hiMsg")
