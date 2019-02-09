@@ -110,20 +110,32 @@ class TelegramBot:
 			'probName' : 'no problem'
 		}
 
+	def debug(self, params):
+		if ('parse_mode' in params):
+			del params['parse_mode']
+
+	def tryCommand(self, command, params):
+		response = requests.post(self.url + command, data = params)
+		return response.json()
+
 	def sendCommand(self, responseElement, chatId):
 		print(responseElement)
 		command = responseElement['command']
 		responseElement.pop('command')
 		params = responseElement
 		params['chat_id'] = chatId
-		response = requests.post(self.url + command, data = params)
-		jsonResponse = response.json()
+		jsonResponse = self.tryCommand(command, params)
 		if ('result' in jsonResponse):
 			return jsonResponse['result']
 		else:
-			print("Can't send command")
-			print(jsonResponse)
-			sys.exit(1)
+			self.debug(params)
+			jsonResponse = self.tryCommand(command, params)
+			if ('result' in jsonResponse):
+				return jsonResponse['result']
+			else:
+				print("Can't send command")
+				print(jsonResponse)
+				sys.exit(1)
 
 	def handleUpdate(self, update):
 		if ('message' not in update):
@@ -142,7 +154,7 @@ class TelegramBot:
 			if (user['type'] == 0):
 				#default user
 				if (message['text'] == '/start'):
-					self.sendCommand(textMessage(HiMsg), userId)
+					self.sendCommand(markdownMessage(HiMsg), userId)
 					return
 
 				params = message['text'].split()
@@ -151,12 +163,12 @@ class TelegramBot:
 						user['probName'] = ' '.join(params[1:])
 					else:
 						user['probName'] = 'no problem'
-					self.sendCommand(textMessage("Название задачи: " + user['probName']), userId)
+					self.sendCommand(markdownMessage("Название задачи: " + user['probName']), userId)
 					return
 
 				text = '*' + self.getUsername(chat) + ' (' + user['probName'] + ')' + '*\n' + message['text']
 				for adminId in self.admins:
-					resp = self.sendCommand(textMessage(text), adminId)
+					resp = self.sendCommand(markdownMessage(text), adminId)
 					self.whoSent[resp['message_id']] = userId
 					self.msgProb[resp['message_id']] = user['probName']
 
@@ -169,19 +181,19 @@ class TelegramBot:
 						rabotyagaId = self.whoSent[msgId]
 						if (message['text'] == '/op1'):
 							self.users[rabotyagaId]['type'] = 1
-							self.sendCommand(textMessage('op 1'), rabotyagaId)
+							self.sendCommand(markdownMessage('op 1'), rabotyagaId)
 							return
 						if (message['text'] == '/op0'):
 							self.users[rabotyagaId]['type'] = 0
-							self.sendCommand(textMessage('op 0'), rabotyagaId)
+							self.sendCommand(markdownMessage('op 0'), rabotyagaId)
 							return
 						if (message['text'] == '/op2'):
 							self.users[rabotyagaId]['type'] = 2
-							self.sendCommand(textMessage('Вам бан'), rabotyagaId)
+							self.sendCommand(markdownMessage('Вам бан'), rabotyagaId)
 							return
 
 						text = '*' + self.getUsername(message['from']) + ' (' + self.msgProb[msgId] + ')' + '*\n' + message['text']
-						self.sendCommand(textMessage(text), rabotyagaId)
+						self.sendCommand(markdownMessage(text), rabotyagaId)
 						self.whoSent[message['message_id']] = rabotyagaId
 						self.msgProb[message['message_id']] = self.msgProb[msgId]
 				else:
