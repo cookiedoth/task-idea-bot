@@ -111,6 +111,7 @@ class TelegramBot:
 		}
 
 	def sendCommand(self, responseElement, chatId):
+		print(responseElement)
 		command = responseElement['command']
 		responseElement.pop('command')
 		params = responseElement
@@ -141,7 +142,7 @@ class TelegramBot:
 			if (user['type'] == 0):
 				#default user
 				if (message['text'] == '/start'):
-					self.sendCommand(markdownMessage(HiMsg), userId)
+					self.sendCommand(textMessage(HiMsg), userId)
 					return
 
 				params = message['text'].split()
@@ -150,12 +151,12 @@ class TelegramBot:
 						user['probName'] = ' '.join(params[1:])
 					else:
 						user['probName'] = 'no problem'
-					self.sendCommand(markdownMessage("Название задачи: " + user['probName']), userId)
+					self.sendCommand(textMessage("Название задачи: " + user['probName']), userId)
 					return
 
 				text = '*' + self.getUsername(chat) + ' (' + user['probName'] + ')' + '*\n' + message['text']
 				for adminId in self.admins:
-					resp = self.sendCommand(markdownMessage(text), adminId)
+					resp = self.sendCommand(textMessage(text), adminId)
 					self.whoSent[resp['message_id']] = userId
 					self.msgProb[resp['message_id']] = user['probName']
 
@@ -168,19 +169,19 @@ class TelegramBot:
 						rabotyagaId = self.whoSent[msgId]
 						if (message['text'] == '/op1'):
 							self.users[rabotyagaId]['type'] = 1
-							self.sendCommand(markdownMessage('op 1'), rabotyagaId)
+							self.sendCommand(textMessage('op 1'), rabotyagaId)
 							return
 						if (message['text'] == '/op0'):
 							self.users[rabotyagaId]['type'] = 0
-							self.sendCommand(markdownMessage('op 0'), rabotyagaId)
+							self.sendCommand(textMessage('op 0'), rabotyagaId)
 							return
 						if (message['text'] == '/op2'):
 							self.users[rabotyagaId]['type'] = 2
-							self.sendCommand(markdownMessage('Вам бан'), rabotyagaId)
+							self.sendCommand(textMessage('Вам бан'), rabotyagaId)
 							return
 
 						text = '*' + self.getUsername(message['from']) + ' (' + self.msgProb[msgId] + ')' + '*\n' + message['text']
-						self.sendCommand(markdownMessage(text), rabotyagaId)
+						self.sendCommand(textMessage(text), rabotyagaId)
 						self.whoSent[message['message_id']] = rabotyagaId
 						self.msgProb[message['message_id']] = self.msgProb[msgId]
 				else:
