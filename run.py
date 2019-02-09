@@ -150,6 +150,7 @@ class TelegramBot:
 						user['probName'] = ' '.join(params[1:])
 					else:
 						user['probName'] = 'no problem'
+					self.sendCommand(markdownMessage("Название задачи: " + user['probName']), userId)
 					return
 
 				text = '*' + self.getUsername(chat) + ' (' + user['probName'] + ')' + '*\n' + message['text']
